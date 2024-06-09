@@ -15,13 +15,6 @@
                 <interface sztype="Serial" interfacename="Serial" count="4" />
             </slot>
         </dev>
-        <dev id="08CD4B09-477C-4034-A5DA-7D96561329CF" name="R5" poe="0" model="Router" settings="" system_mac="54-89-98-13-40-51" com_port="2004" bootmode="0" cx="328.000000" cy="290.000000" edit_left="355" edit_top="344">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
-                <interface sztype="Ethernet" interfacename="GE" count="4" />
-                <interface sztype="Serial" interfacename="Serial" count="4" />
-            </slot>
-        </dev>
         <dev id="8F0FF68D-5356-416d-9FDC-48F77A00C838" name="R6" poe="0" model="Router" settings="" system_mac="54-89-98-05-42-B7" com_port="2005" bootmode="0" cx="521.000000" cy="285.000000" edit_left="548" edit_top="339">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
@@ -44,6 +37,25 @@
             </slot>
         </dev>
         <dev id="712B4EA0-4034-40d3-8A9D-0AC09619458E" name="R3" poe="0" model="Router" settings="" system_mac="54-89-98-38-6F-D3" com_port="2002" bootmode="0" cx="213.000000" cy="520.000000" edit_left="240" edit_top="574">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="99D6CAD4-3251-4eb6-815B-7D72B4DD6A83" name="LSW1" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-F1-34-D2" com_port="2007" bootmode="1" cx="306.000000" cy="461.000000" edit_left="333" edit_top="515">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="029BE688-D8D8-4ea1-9F78-6F99C807425F" name="LSW2" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-E5-61-7B" com_port="2008" bootmode="1" cx="532.000000" cy="466.000000" edit_left="559" edit_top="520">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="08CD4B09-477C-4034-A5DA-7D96561329CF" name="R5" poe="0" model="Router" settings="" system_mac="54-89-98-13-40-51" com_port="2004" bootmode="0" cx="328.000000" cy="290.000000" edit_left="355" edit_top="344">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
                 <interface sztype="Ethernet" interfacename="GE" count="4" />
@@ -81,6 +93,12 @@
         </line>
         <line srcDeviceID="8F0FF68D-5356-416d-9FDC-48F77A00C838" destDeviceID="6EB864DA-54C4-4b52-B6D1-892B3D256DDF">
             <interfacePair lineName="Copper" srcIndex="4" srcBoundRectIsMoved="1" srcBoundRect_X="591.130920" srcBoundRect_Y="314.135193" srcOffset_X="0.000000" srcOffset_Y="3.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="706.869080" tarBoundRect_Y="319.864807" tarOffset_X="-23.000000" tarOffset_Y="7.000000" />
+        </line>
+        <line srcDeviceID="99D6CAD4-3251-4eb6-815B-7D72B4DD6A83" destDeviceID="08CD4B09-477C-4034-A5DA-7D96561329CF">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="338.510376" srcBoundRect_Y="445.169250" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="349.489624" tarBoundRect_Y="359.830750" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="029BE688-D8D8-4ea1-9F78-6F99C807425F" destDeviceID="8F0FF68D-5356-416d-9FDC-48F77A00C838">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="556.380432" srcBoundRect_Y="449.895752" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="550.619568" tarBoundRect_Y="355.104248" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
         </line>
     </lines>
     <shapes />
